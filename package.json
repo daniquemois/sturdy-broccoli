@@ -1,0 +1,23 @@
+{
+  "name": "sturdy-broccoli",
+  "version": "1.0.0",
+  "description": "Project Tech Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniquemois/sturdy-broccoli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniquemois/sturdy-broccoli/issues"
+  },
+  "homepage": "https://github.com/daniquemois/sturdy-broccoli#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
