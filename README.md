@@ -1,7 +1,8 @@
-Project Tech Repository
+<h1>Project Tech Repository</h1>
 
-<section align="center" id="start">
+<section align="center" id="start" display="flex">
   <img src="https://i.postimg.cc/pr34hyrb/meme.png" width="500">
+  <p>Hier een meme om alvast sorry te zeggen voor de rest van de inhoud xxx </p>
 </section>
 
 <section align="center">
