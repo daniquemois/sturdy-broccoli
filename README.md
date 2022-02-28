@@ -18,9 +18,9 @@
   <h2>Inhoudsopgave</h2>
   <section>
     <ul>
-    <li><a href="#voorwoord">📜Inleiding</a></li>
-    <li><a href="#voorwoord">🦹🏽‍♀️Voorwoord</a></li>
-     <a href="#bronnen"><h3>📎Bronnen</h3></a>
+      <li><a href="#inleiding">📜Inleiding</a></li>
+      <li><a href="#voorwoord">🦹🏽‍♀️Voorwoord</a></li>
+      <li><a href="#bronnen">📎Bronnen</a></li>
     </ul>
   </section>
 </section>
@@ -28,3 +28,12 @@
 <section>
   <h2 id="inleiding">Inhoudsopgave</h2>
 </section>
+  
+<section>
+  <h2 id="voorwoord">Voorwoord</h2>
+</section>
+  
+<section>
+  <h2 id="bronnen">Bronnen</h2>
+</section>
+
