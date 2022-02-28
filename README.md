@@ -1,6 +1,6 @@
 <h1 id="start">Project Tech Repository</h1>
 
-<section align="center" display="flex" flex-direction="row">
+<section align="center">
   <img src="https://i.postimg.cc/pr34hyrb/meme.png" width="500">
   <p>Hier een meme om alvast sorry te zeggen voor de rest van de inhoud xxx </p>
 </section>
