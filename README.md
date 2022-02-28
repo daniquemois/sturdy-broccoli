@@ -15,7 +15,7 @@
 <p align="right">(<a href="#start">terug naar start</a>)</p>
   
 <section>
-  <h2>-Inhoudsopgave</h2>
+  <h2 style="color: #F54E4F">Inhoudsopgave</h2>
   <section>
     <ul>
       <li><a href="#inleiding">📜Inleiding</a></li>
