@@ -1,4 +1,4 @@
-<h1 id="start">Project Tech Repository</h1>
+<h1 id="start" align="center">Project Tech Repository</h1>
 
 <section align="center">
   <img src="https://i.postimg.cc/pr34hyrb/meme.png" width="500">
@@ -12,6 +12,6 @@
 <a href="https://github.com/daniquemois/sturdy-broccoli/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/daniquemois/sturdy-broccoli"></a>
   </section>
 
-
-
 <p align="right">(<a href="#start">terug naar start</a>)</p>
+
+  
