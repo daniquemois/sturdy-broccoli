@@ -20,7 +20,10 @@
     <ul>
       <li><a href="#voorwoord">🦹🏽‍♀️Voorwoord</a></li>
       <li><a href="#inleiding">📜Inleiding</a></li>
-      <li><a href="#idee">✨Idee</a></li>
+      <li><a href="#idee">✨Doel & algemene informatie</a></li>
+      <li><a href="#idee">⚙️Installatie</a></li>
+      <li><a href="#idee">💶Contributie</a></li>
+      <li><a href="#idee">👮🏽‍♀️Gedragsregels</a></li>
       <li><a href="#bronnen">📎Bronnen</a></li>
     </ul>
   </section>
@@ -38,7 +41,22 @@
 </section>
   
 <section>
-  <h2 id="idee">✨Idee</h2>
+  <h2 id="idee">✨Doel & algemene informatie</h2>
+  <p></p>
+</section>
+  
+<section>
+  <h2 id="idee">⚙️Installatie</h2>
+  <p></p>
+</section>
+  
+<section>
+  <h2 id="idee">💶Contributie</h2>
+  <p></p>
+</section>
+  
+<section>
+  <h2 id="idee">👮🏽‍♀️Gedragsregels</h2>
   <p></p>
 </section>
   
