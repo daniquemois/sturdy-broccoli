@@ -27,22 +27,22 @@
 </section>
 
 <section>
-  <h2 id="voorwoord">Voorwoord</h2>
+  <h2 id="voorwoord">🦹🏽‍♀️Voorwoord</h2>
   <p>Ik ben Danique Lammertink en dit is mijn tech repository.</p>
 </section>
   
 <section>
-  <h2 id="inleiding">Inleiding</h2>
+  <h2 id="inleiding">📜Inleiding</h2>
   <p>Sinds apps zoals Tinder bestaat schieten de match apps uit de grond als paddenstoelen. Als developer wil je je dan alsnog onderscheiden van de andere developers. Dus in plaats van het "opnieuw" uitvinden van een dating app, waarin je bijvoorbeeld probeert dat het geen vleesmarkt is, kan je beter met iets totaal nieuws komen.</p>
   <p>Daarnaast speelt covid ook nog steeds een rol, maar nu dat een beetje is gaan liggen is er weer ruimte om terug te veranderen naar het normale leven. Mensen kunnen weer op vakantie! Daarom kwam ik met het idee om een matching app te maken voor jouw ideale vakantie.</p>
 </section>
   
 <section>
-  <h2 id="idee">Idee</h2>
+  <h2 id="idee">✨Idee</h2>
   <p></p>
 </section>
   
 <section>
-  <h2 id="bronnen">Bronnen</h2>
+  <h2 id="bronnen">📎Bronnen</h2>
 </section>
 
