@@ -13,5 +13,8 @@
   </section>
 
 <p align="right">(<a href="#start">terug naar start</a>)</p>
-
+  
+<section>
+  <h2>Bronnen</h2>
+  </section>
   
