@@ -15,6 +15,10 @@
 <p align="right">(<a href="#start">terug naar start</a>)</p>
   
 <section>
-  <h2>Bronnen</h2>
+  <h2>Inhoudsopgave</h2>
+  <section>
+    <h3>Bronnen</h3>
+  </section>
+  
   </section>
   
