@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRoundedMedium_21022.ttf') format("ttf");
+}
+*, html{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0px;
+}
+:root{
+    --white: #ffffff;
+    --paars: #765ba3;
+    --rood: #d9445d;
+    --blauw: #5a85c4;
+    --geel: #f0d654; 
+    --groen: #6cbfa2; 
+    --grey: #DDDDDD; 
+}
+body {
+    background-color: var(--grey);
+}
+/* Header */
+#header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+#header img {
+    width: 2.5em;
+    height: 2.5em;
+}
+#header h2{
+    font-family: "gotham rounded";
+    font-weight: 300;
+    font-size: 2em;
+}
+/* Footer */
+#footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+#footerbalk{
+    background-image: url("/static/images/footerbalk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10em;
+}
+#hart{
+    position: absolute;
+    left: calc(100% - 55%);
+    margin-top: 2em;
+}
+#cross{
+    position: absolute;
+    left: calc(100% - 90%);
+    margin-top: 6em;
+}
+#star{
+    position: absolute;
+    left: calc(100% - 18%);
+    margin-top: 6em;
+}
+/* Home */
+#likespan{
+    margin: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#vlakkie{
+    background-color: white;
+    padding: 2em;
+    border-radius: 5%;
+    border: .3em solid var(--groen);
+    aspect-ratio: 1 / 1.5;
+}
+#vlakback{
+    background-color: white;
+    padding: 2em;
+    border-radius: 5%;
+    border: .3em solid var(--grey);
+    position: absolute;
+    width: 21.5em;
+    aspect-ratio: 1 / 1.5;
+    margin-left: 1em;
+    top: 10em;
+    z-index: -1;
+}
+#vlakback2{
+    background-color: white;
+    padding: 2em;
+    border-radius: 5%;
+    border: .3em solid var(--grey);
+    position: absolute;
+    width: 21.5em;
+    aspect-ratio: 1 / 1.5;
+    margin-left: 0em;
+    top: 9.5em;
+    z-index: -2;
+}
+#tekstvlak{
+    margin-top: .4em;
+}
+#tekstvlak h2{
+    font-family: "gotham rounded";
+    font-weight: 200;
+    font-style: italic;
+}
+#tekstvlak p{
+    font-family: "gotham rounded";
+    font-weight: 200;
+}
+#praag{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("/static/images/praag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

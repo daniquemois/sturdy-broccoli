@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/daniquemois/sturdy-broccoli#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
   }
 }
