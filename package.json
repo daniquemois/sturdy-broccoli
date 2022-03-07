@@ -4,7 +4,7 @@
   "description": "Project Tech Repository",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "eslint": "^8.10.0",
+    "netlify-cli": "^9.12.3"
   }
 }

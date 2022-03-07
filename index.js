@@ -1,6 +1,7 @@
 const express = require('express')
 const { engine } = require('express-handlebars');
 const app = express();
+const port = process.env.PORT || 5000
 
 const path = require('path');
 app.use('/static', express.static(path.join(__dirname, 'public')));
@@ -24,4 +25,4 @@ app.get('/login', (req, res) => {
   res.render('login', {'title': 'Login'});
 });
 
-app.listen(3000);
+app.listen(port);
