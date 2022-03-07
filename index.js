@@ -13,7 +13,15 @@ app.set('view engine', '.hbs');
 app.set("views", "./views");
 
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', {'title': 'Homepagina'});
+});
+
+app.get('/account', (req, res) => {
+  res.render('account', {'title': 'Account'});
+});
+
+app.get('/login', (req, res) => {
+  res.render('login', {'title': 'Login'});
 });
 
 app.listen(3000);

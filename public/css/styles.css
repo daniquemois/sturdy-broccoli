@@ -25,9 +25,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
 }
-#header img {
+#account {
     width: 2.5em;
     height: 2.5em;
 }
@@ -35,6 +38,10 @@ body {
     font-family: "gotham rounded";
     font-weight: 300;
     font-size: 2em;
+}
+#logo{
+    height: auto;
+    width: 10em;
 }
 /* Footer */
 #footer{
@@ -121,4 +128,60 @@ body {
     background-image: url("/static/images/praag.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Form */
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+label{
+    font-family: "gotham rounded";
+    margin-bottom: .5em;
+}
+input{
+    font-family: "gotham rounded";
+    border-radius: 2em;
+    height: 3em;
+    margin-bottom: 2em;
+    border: .1em solid var(--groen);
+    padding: .5em;
+    padding-left: 1em;
+}
+#knopjes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+button{
+    width: 100%;
+    aspect-ratio: 1 / .5;
+    margin: .5em;
+    font-family: "gotham rounded";
+    border-radius: 5em;
+    background-color: var(--white);
+}
+button:first-of-type{
+    border: .2em solid var(--rood);
+}
+button:first-of-type:hover{
+    background-color: var(--rood);
+    color: white;
+}
+button:nth-of-type(2){
+    border: .2em solid var(--paars);
+}
+button:nth-of-type(2):hover{
+    background-color: var(--paars);
+    color: white;
+}
+/* Background */
+figure{
+    height: 100%;
+    width: 100%;
+    background-image: url("/static/images/logotech.png");
+    background-repeat: repeat;
+}
+#homescreen{
+    margin-top: 14em;
 }
