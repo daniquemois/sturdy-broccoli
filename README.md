@@ -42,7 +42,7 @@
   
 <section>
   <h2 id="idee">✨Doel & algemene informatie</h2>
-  <p>De eerste 5 weken van Blok Tech staan in het teken van het maken van 1 feature van een matching app. Ik heb gekozen voor de login functie, omdat ik dit het meest interessant vind om te leren en om in de toekomst te gaan gebruiken. Je kan hier meer over lezen in het eerste blokje van de wiki: startend bij <a href="https://github.com/daniquemois/sturdy-broccoli/wiki/concept"></a></p>
+  <p>De eerste 5 weken van Blok Tech staan in het teken van het maken van 1 feature van een matching app. Ik heb gekozen voor de login functie, omdat ik dit het meest interessant vind om te leren en om in de toekomst te gaan gebruiken. Je kan hier meer over lezen in het eerste blokje van de wiki: startend bij [Concept](https://github.com/daniquemois/sturdy-broccoli/wiki/concept)
 </section>
   
 <section>
