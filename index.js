@@ -25,7 +25,5 @@ app.get('/login', (req, res) => {
   res.render('login', {'title': 'Login'});
 });
 
-app.listen(3000);
-
-var persoon = "test";
+app.listen(port);
 
