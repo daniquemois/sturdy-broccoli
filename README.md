@@ -21,9 +21,9 @@
       <li><a href="#voorwoord">🦹🏽‍♀️Voorwoord</a></li>
       <li><a href="#inleiding">📜Inleiding</a></li>
       <li><a href="#idee">✨Doel & algemene informatie</a></li>
-      <li><a href="#idee">⚙️Installatie</a></li>
-      <li><a href="#idee">💶Contributie</a></li>
-      <li><a href="#idee">👮🏽‍♀️Gedragsregels</a></li>
+      <li><a href="#installatie">⚙️Installatie</a></li>
+      <li><a href="#contributie">💶Contributie</a></li>
+      <li><a href="#gedragsregels">👮🏽‍♀️Gedragsregels</a></li>
       <li><a href="#bronnen">📎Bronnen</a></li>
     </ul>
   </section>
@@ -42,21 +42,21 @@
   
 <section>
   <h2 id="idee">✨Doel & algemene informatie</h2>
+  <p>De eerste 5 weken van Blok Tech staan in het teken van het maken van 1 feature van een matching app. Ik heb gekozen voor de login functie, omdat ik dit het meest interessant vind om te leren en om in de toekomst te gaan gebruiken. Je kan hier meer over lezen in het eerste blokje van de wiki: startend bij <a href="https://github.com/daniquemois/sturdy-broccoli/wiki/concept"></a></p>
+</section>
+  
+<section>
+  <h2 id="installatie">⚙️Installatie</h2>
   <p></p>
 </section>
   
 <section>
-  <h2 id="idee">⚙️Installatie</h2>
+  <h2 id="contributie">💶Contributie</h2>
   <p></p>
 </section>
   
 <section>
-  <h2 id="idee">💶Contributie</h2>
-  <p></p>
-</section>
-  
-<section>
-  <h2 id="idee">👮🏽‍♀️Gedragsregels</h2>
+  <h2 id="gedragsregels">👮🏽‍♀️Gedragsregels</h2>
   <p></p>
 </section>
   
