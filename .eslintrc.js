@@ -10,5 +10,6 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "no-var": 1
     }
 }
