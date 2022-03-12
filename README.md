@@ -47,7 +47,44 @@
   
 <section>
   <h2 id="installatie">⚙️Installatie</h2>
-  <p></p>
+  <p>Voor dit project moet je meerdere dingen installeren. Vooral je repository lokaal zetten en het clonen van de template wiki was ingewikkeld:</p>
+  <p>Lokaliseren van je project</p>
+<p>Zorgen dat je naar je desktop navigeert</p>
+
+```
+cd desktop
+```
+
+<p>Clonen van je project</p>
+
+```
+git clone <linkje>
+```
+
+<p>De benodigde npm packages installeren</p>
+
+```
+npm install
+```
+
+<p>De website runnen</p>
+
+```
+npm run start
+```
+
+<p>Clonen van project tech wiki</p>
+<p>Even zeker weten dat je in het goede mapje zit!</p>
+
+```
+cd sturdy-broccoli
+```
+
+<p>Project tech wiki clonen</p>
+
+```
+git clone <linkje>
+```
 </section>
   
 <section>
