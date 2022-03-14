@@ -1,10 +1,24 @@
 const express = require('express')
 const { engine } = require('express-handlebars');
 const app = express();
-const port = process.env.PORT || 5000
+const session = require('express-session');
+const port = process.env.PORT || 1337
+require('dotenv').config();
+const connectDB = require("./config/db.js")
+
+connectDB();
+
+const router = require("./routes/router")
+const user = require("./routes/user")
 
 const path = require('path');
 app.use('/static', express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: true
+}))
 
 app.engine('.hbs', engine({
   extname: '.hbs',
@@ -13,17 +27,9 @@ app.engine('.hbs', engine({
 app.set('view engine', '.hbs');
 app.set("views", "./views");
 
-app.get('/', (req, res) => {
-  res.render('home', {'title': 'Homepagina'});
-});
+app.use("/", router)
 
-app.get('/account', (req, res) => {
-  res.render('account', {'title': 'Account'});
-});
-
-app.get('/login', (req, res) => {
-  res.render('login', {'title': 'Login'});
-});
+app.use("/", user)
 
 app.listen(port);
 

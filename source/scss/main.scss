@@ -15,6 +15,7 @@
     --geel: #f0d654; 
     --groen: #6cbfa2; 
     --grey: #DDDDDD; 
+    --zwart: #000000; 
 }
 body {
     background-color: var(--grey);
@@ -49,31 +50,48 @@ body {
     bottom: 0;
     position: fixed;
     display: flex;
-    justify-content: center;
-}
-#footerbalk{
-    background-image: url("/static/images/footerbalk.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 10em;
+    height: 7em;
+    background-color: var(--white);  
 }
-#hart{
-    position: absolute;
-    left: calc(100% - 55%);
-    margin-top: 2em;
+#footer img{
+    height: 5em;
 }
-#cross{
-    position: absolute;
-    left: calc(100% - 90%);
-    margin-top: 6em;
-}
-#star{
-    position: absolute;
-    left: calc(100% - 18%);
-    margin-top: 6em;
+#footer img:nth-of-type(1), #footer img:nth-of-type(3){
+    height: 3em;
 }
 /* Home */
+#eroverheen h2{
+    font-family: "gotham rounded";
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#eroverheen p{
+    font-family: "gotham rounded";
+    margin-bottom: 2em;
+}
+#hpbutton{
+    width: 10em;
+}
+#eroverheen {
+    position: absolute;
+    top: 15em;
+    left: 3em;
+    width: 20em;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: var(--white);
+    border: .4em solid var(--groen);
+    padding: 1em;
+    border-radius: 2em;
+}
 #likespan{
     margin: 4em;
     margin-left: 2em;
@@ -85,6 +103,7 @@ body {
     border-radius: 5%;
     border: .3em solid var(--groen);
     aspect-ratio: 1 / 1.5;
+    opacity: .5;
 }
 #vlakback{
     background-color: white;
@@ -97,6 +116,7 @@ body {
     margin-left: 1em;
     top: 10em;
     z-index: -1;
+    opacity: .5;
 }
 #vlakback2{
     background-color: white;
@@ -109,6 +129,7 @@ body {
     margin-left: 0em;
     top: 9.5em;
     z-index: -2;
+    opacity: .5;
 }
 #tekstvlak{
     margin-top: .4em;
@@ -153,13 +174,19 @@ input{
     display: flex;
     flex-direction: row;
 }
-button{
+#knopjes a, button{
     width: 100%;
     aspect-ratio: 1 / .5;
     margin: .5em;
     font-family: "gotham rounded";
     border-radius: 5em;
     background-color: var(--white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--zwart);
 }
 button:first-of-type{
     border: .2em solid var(--rood);
@@ -168,10 +195,10 @@ button:first-of-type:hover{
     background-color: var(--rood);
     color: white;
 }
-button:nth-of-type(2){
+#knopjes a:nth-of-type(1){
     border: .2em solid var(--paars);
 }
-button:nth-of-type(2):hover{
+#knopjes a:nth-of-type(1):hover{
     background-color: var(--paars);
     color: white;
 }
@@ -179,9 +206,20 @@ button:nth-of-type(2):hover{
 #background{
     height: 100%;
     width: 100%;
-    background-image: url("/static/images/logotech.png");
-    background-repeat: repeat;
+    background-image: url("/static/images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+}
+#backbackground{
+    height: 100%;
+    z-index: -2;
+    background-color: var(--white);
+    width: 100%;
+    position: absolute;
 }
 #homescreen{
-    margin-top: 14em;
+    margin-top: 10em;
 }

@@ -1,20 +1,23 @@
 <figure id="background">
 
 </figure>
+<figure id="backbackground">
 
+</figure>
 
+{{>header}}
 
-<form method="login" id="homescreen"> 
+<form action="/inloggen" id="homescreen" method="POST"> 
 
     <label for="frame">Inlognaam</label>
     <input type="text" id="aname" name="aname">
 
     <label for="frame">Wachtwoord</label>
-    <input type="text" id="password" name="password">
+    <input type="password" id="password" name="password">
 
     <section id="knopjes">
         <button>Inloggen</button>
-        <button>Account aanmaken</button>
+        <a href="/account">Account aanmaken</a>
     </section>
 
 </form>

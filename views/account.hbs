@@ -1,6 +1,13 @@
 {{>header}}
 
-<form method="POST"> 
+<figure id="background">
+
+</figure>
+<figure id="backbackground">
+
+</figure>
+
+<form action="/inloggen" method="POST"> 
 
     <label for="frame">Voornaam</label>
     <input type="text" id="fname" name="fname">
@@ -12,10 +19,10 @@
     <input type="text" id="aname" name="aname">
 
     <label for="frame">Wachtwoord</label>
-    <input type="text" id="password" name="password">
+    <input type="password" id="password" name="password">
     
     <section id="knopjes">
-        <button>Ik heb al een account</button>
+        <a href="">Ik heb al een account</a>
         <button>Account aanmaken</button>
     </section>
 </form>
