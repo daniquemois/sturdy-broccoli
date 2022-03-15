@@ -9,6 +9,7 @@ const saltRounds = 10;
 
 let session;
 
+// Dit is om in te loggen. Hij vergelijkt dan wat je hebt ingevuld met wat er in de database staat.
 router.post('/inloggen', async (req, res) => {
     try {
         const getUser = await User.findOne({ username: req.body.accountnaam });
@@ -28,11 +29,13 @@ router.post('/inloggen', async (req, res) => {
             return res.status(404).redirect('/login');
         }
     } catch (error) {
+        // Als dit niet zo is kom je er dus niet in
         console.error(error);
         return res.status(500).redirect('/login');
     }
 });
 
+// Hiermee maak je een account aan en slaat hij dit op in de database
 router.post("/register", async (req, res) => {
     const hashedPassword = await bcrypt.hash(req.body.wachtwoord, saltRounds);
     const createUser = new User({
@@ -56,17 +59,20 @@ router.post("/register", async (req, res) => {
     });
 });
 
+// Hiermee verwijder je de gebruiker
 router.post('/verwijdergebruiker', (req, res) => {
     console.log(req.body.accountnaam)
     User.find({ accountnaam: req.body.accountnaam }).remove().exec();
     res.redirect('/');
 });
 
+// Hiermee destroy je de sessie en log je dus uit
 router.post('/uitloggen', (req, res) => {
     req.session.destroy();
     res.redirect('/');
 });
 
+// Hiermee kan je je acccountnaam en je email wijzigen
 router.post('/update', (req, res) => {
     session = req.session;
     User.updateOne({ accountnaam: session.accountnaam }, { accountnaam: req.body.accountnaam, email: req.body.email }).exec();

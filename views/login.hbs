@@ -6,7 +6,7 @@
 </figure>
 
 {{>header}}
-
+{{!-- Hier kan je inloggen met je bestaande account --}}
 <form action="/inloggen" id="homescreen" method="POST"> 
 
     <label for="frame">Inlognaam</label>
@@ -19,7 +19,7 @@
         <button>Inloggen</button>
         <a href="/accountaanmaken">Account aanmaken</a>
     </section>
-
+    {{!-- Dit zorgt ervoor dat zodra je niks invult je een error krijgt --}}
     <label id="error"></label>
     
 </form>

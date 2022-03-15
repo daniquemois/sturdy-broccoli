@@ -365,4 +365,22 @@ main p {
   color: var(--paars);
 }
 
+#errorpagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 4em;
+}
+#errorpagina h1 {
+  font-family: "gotham rounded";
+  font-size: 3em;
+  color: var(--rood);
+}
+#errorpagina h2 {
+  font-family: "gotham rounded";
+  font-size: 2em;
+  color: var(--paars);
+}
+
 /*# sourceMappingURL=main.css.map */

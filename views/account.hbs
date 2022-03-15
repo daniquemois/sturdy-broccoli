@@ -7,20 +7,25 @@
 
 </figure>
 
+{{!-- Door middel van een section gemakkelijk in het midden gezet --}}
 <section id="bestaandaccount">
     <figure>
     </figure>
 
+    {{!-- Deze form kan je updaten, standaard staat al jouw ingelogd gegevens erin! --}}
     <form action="update" method="post">
         <input type="text" id="accountnaam" name="accountnaam" value="{{accountnaam}}" required>
         <input type="email" id="email" name="email" value="{{email}}">
         <input type="submit" value="Wijzigingen opslaan">
     </form>
     
+    {{!-- Dit article zorgt ervoor dat je beide forms naast elkaar kan zetten --}}
     <article>
+        {{!-- Deze form zorgt ervoor dat je kan uitloggen --}}
         <form action="uitloggen" method="post">
             <input type="submit" value="Uitloggen">
         </form>
+        {{!-- Deze form zorgt ervoor dat je de gebruiker kan verwijderen --}}
         <form action="verwijdergebruiker" method="post">
             <input type="submit" value="Account verwijderen">
         </form>
