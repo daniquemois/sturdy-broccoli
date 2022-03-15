@@ -1,19 +1,43 @@
-// const range_input = $('.slider');
-// const indicator = $('.prijs');
+const CONFIG = {
+	spreadsheetId: '1F3DBuLeR1-vDdglypceSc6ci6vNgcQ15R2Y33Q0kXuo',
+	spreadsheetName: 'Blad1'
+}
 
-// range_input.on('change', () => {
-//   const value = range_input.val();
-// indicator.html(value);
-// });
+async function getData() {
+	let res = await fetch(`https://opensheet.elk.sh/${CONFIG.spreadsheetId}/${CONFIG.spreadsheetName}`)
+	return await res.json();
+}
 
-// function drag() {
-//   range_input.on("mousedown", () =>  {
-//     range_input.on("mousemove", () =>  {
-//       const value = range_input.val();
-//       indicator.html(value);
-//     });
-//   });
-// };
+function gegevensOphalen(data) {
+	let main = document.querySelector('main');
+	
+	console.log(data);
 
-// drag();
+	data.forEach(item => {
+		let container = document.createElement('article');
+		
+		let continent = document.createElement('h2');
+		continent.textContent = item['Continent'];
+		
+		let land = document.createElement('h3');
+		land.textContent = item['Land'];
+		
+		let tijdzone = document.createElement('p');
+		tijdzone.textContent = item['Tijdzone'];
+		
+		container.appendChild(continent);
+		container.appendChild(land);
+		container.appendChild(tijdzone);
+
+		main.appendChild(container);
+	})
+
+}
+
+if(document.querySelector('main')) {
+	getData()
+	.then(data => {	
+        gegevensOphalen(data);
+	})
+}
 

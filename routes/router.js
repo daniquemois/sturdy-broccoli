@@ -37,7 +37,7 @@ router.get('/accountaanmaken', (req, res) => {
 });
 
 router.get('/api', (req, res) => {
-res.render('api', {'title': 'Weer'});
+res.render('api', {'title': 'Tijd'});
 });
 
 module.exports = router;

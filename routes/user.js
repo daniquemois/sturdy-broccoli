@@ -62,4 +62,16 @@ router.post('/verwijdergebruiker', (req, res) => {
     res.redirect('/');
 });
 
+router.post('/uitloggen', (req, res) => {
+    req.session.destroy();
+    res.redirect('/');
+});
+
+router.post('/update', (req, res) => {
+    session = req.session;
+    User.updateOne({ accountnaam: session.accountnaam }, { accountnaam: req.body.accountnaam, email: req.body.email }).exec();
+    session.accountnaam = req.body.accountnaam;
+    res.redirect('/');
+})
+
 module.exports = router;
