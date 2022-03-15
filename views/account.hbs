@@ -7,22 +7,23 @@
 
 </figure>
 
-<form action="/inloggen" method="POST"> 
+<section id="bestaandaccount">
+    <figure>
+    </figure>
 
-    <label for="frame">Voornaam</label>
-    <input type="text" id="fname" name="fname">
-
-    <label for="frame">Achternaam</label>
-    <input type="text" id="lname" name="lname">
-
-    <label for="frame">Accountnaam</label>
-    <input type="text" id="aname" name="aname">
-
-    <label for="frame">Wachtwoord</label>
-    <input type="password" id="password" name="password">
+    <form>
+        <input type="text" id="accountnaam" name="accountnaam">
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Wijzigingen opslaan">
+    </form>
     
-    <section id="knopjes">
-        <a href="">Ik heb al een account</a>
-        <button>Account aanmaken</button>
-    </section>
-</form>
+    <article>
+        <form>
+            <input type="submit" value="Uitloggen">
+        </form>
+        <form>
+            <input type="submit" value="Account verwijderen">
+        </form>
+    </article>
+
+</section>

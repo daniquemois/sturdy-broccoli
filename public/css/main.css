@@ -118,6 +118,13 @@ body {
   border-radius: 5%;
   border: 0.3em solid var(--groen);
   aspect-ratio: 1/1.5;
+}
+
+#vlakkieopa {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5%;
+  border: 0.3em solid var(--groen);
   opacity: 0.5;
 }
 
@@ -173,18 +180,18 @@ body {
 }
 
 /* Form */
-form {
+#homescreen, #accountscreen {
   display: flex;
   flex-direction: column;
   padding: 3em;
 }
 
-label {
+#homescreen label, #accountscreen label {
   font-family: "gotham rounded";
   margin-bottom: 0.5em;
 }
 
-input {
+#homescreen input, #accountscreen input {
   font-family: "gotham rounded";
   border-radius: 2em;
   height: 3em;
@@ -255,6 +262,81 @@ button:first-of-type:hover {
 
 #homescreen {
   margin-top: 10em;
+}
+
+#bestaandaccount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#bestaandaccount form {
+  display: flex;
+  flex-direction: column;
+}
+
+#bestaandaccount input {
+  padding: 1em;
+  width: 17em;
+  border-radius: 3em;
+  border: 0.2em solid var(--groen);
+  font-family: "gotham rounded";
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+#bestaandaccount article {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+}
+
+#bestaandaccount article * {
+  width: 13em;
+  margin-top: 0em;
+  text-align: center;
+}
+
+#bestaandaccount article input {
+  border: 0.2em solid var(--rood);
+  font-weight: 500;
+}
+
+#bestaandaccount * {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#bestaandaccount figure {
+  background: radial-gradient(circle);
+  background-image: url("/static/images/Danique2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 14em;
+  width: 14em;
+  margin-bottom: 0.4em;
+  border: 0.5em solid var(--paars);
+}
+
+#filteren {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20em;
+}
+
+#slider {
+  border: 1px solid var(--zwart);
+  width: 100%;
+}
+
+#prijsslider p {
+  margin-top: 0em;
 }
 
 /*# sourceMappingURL=main.css.map */

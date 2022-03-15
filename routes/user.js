@@ -4,9 +4,57 @@ const User = require("../models/users");
 const bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({extended: true}));
 
-// app.post('/inloggen', urlencodedparser, (req, res) => {
-//     res.send('Gebruikersnaam: ' + req.body.aname + '<br>Wachtwoord: ' + req.body.password)
-//   })
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+
+let session;
+
+router.post('/inloggen', async (req, res) => {
+    try {
+        const getUser = await User.findOne({ username: req.body.accountnaam });
+        if (getUser) {
+          const comparePassword = await bcrypt.compare(req.body.wachtwoord, getUser.wachtwoord);
+          if (comparePassword) {
+            console.log("Succesvol ingelogd!");
+            session = req.session;
+            session.accountnaam = req.body.accountnaam;
+            return res.status(200).redirect('/');
+          } else {
+            console.error("Verkeerde gebruikersnaam of wachtwoord!");
+            return res.status(404).redirect('/login');
+          }
+        } else {
+            console.error("Verkeerde gebruikersnaam of wachtwoord!");
+            return res.status(404).redirect('/login');
+        }
+    } catch (error) {
+        console.error(error);
+        return res.status(500).redirect('/login');
+    }
+});
+
+router.post("/register", async (req, res) => {
+    const hashedPassword = await bcrypt.hash(req.body.wachtwoord, saltRounds);
+    const createUser = new User({
+        voornaam: req.body.voornaam,
+        achternaam: req.body.achternaam,
+        accountnaam: req.body.accountnaam,
+        email: req.body.email,
+        wachtwoord: hashedPassword
+    });
+
+    createUser.save((error) => {
+        if (error) {
+            console.error(error);
+            return res.status(500).redirect('/accountaanmaken');
+        } else {
+            console.log("Account aangemaakt!")
+            session = req.session;
+            session.accountnaam = req.body.accountnaam;
+            return res.status(200).redirect('/');
+        }
+    });
+});
 
 
 module.exports = router;
