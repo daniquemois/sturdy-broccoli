@@ -1,27 +1,28 @@
 @font-face {
-    font-family: 'Gotham Rounded';
-    src: url('../fonts/GothamRoundedMedium_21022.ttf') format("ttf");
-}
-*, html{
+    font-family: "Gotham Rounded";
+    src: url("../fonts/GothamRoundedMedium_21022.ttf") format("ttf");
+  }
+  *,
+html {
     box-sizing: border-box;
-    padding: 0px; 
+    padding: 0px;
     margin: 0px;
 }
-:root{
-    --white: #ffffff;
-    --paars: #765ba3;
-    --rood: #d9445d;
-    --blauw: #5a85c4;
-    --geel: #f0d654; 
-    --groen: #6cbfa2; 
-    --grey: #DDDDDD; 
-    --zwart: #000000; 
+:root {
+--white: #ffffff;
+--paars: #765ba3;
+--rood: #d9445d;
+--blauw: #5a85c4;
+--geel: #f0d654;
+--groen: #6cbfa2;
+--grey: #dddddd;
+--zwart: #000000;
 }
 body {
     background-color: var(--grey);
 }
 /* Header */
-#header{
+#header {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -30,22 +31,22 @@ body {
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
-    h2{
-        font-family: "gotham rounded";
-        font-weight: 300;
-        font-size: 2em;
-    }
+h2 {
+    font-family: "gotham rounded";
+    font-weight: 300;
+    font-size: 2em;
+}
 }
 #account {
     width: 2.5em;
     height: 2.5em;
 }
-#logo{
+#logo {
     height: auto;
     width: 13em;
 }
 /* Footer */
-#footer{
+#footer {
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -54,26 +55,28 @@ body {
     align-items: center;
     width: 100%;
     height: 7em;
-    background-color: var(--white); 
-    img{
-        height: 5em;
-    } 
-    img:nth-of-type(1), img:nth-of-type(3){
-        height: 3em;
-    }
+    background-color: var(--white);
+img {
+    height: 5em;
+}
+img:nth-of-type(1),
+img:nth-of-type(3) {
+    height: 3em;
+}
 }
 /* Home */
-#eroverheen h2{
+#eroverheen h2 {
     font-family: "gotham rounded";
     margin-top: 2em;
     margin-bottom: 2em;
 }
-#eroverheen p{
+#eroverheen p {
     font-family: "gotham rounded";
     margin-bottom: 2em;
 }
-#hpbutton{
+#hpbutton {
     width: 10em;
+    text-decoration: none;
 }
 #eroverheen {
     position: absolute;
@@ -88,68 +91,68 @@ body {
     align-items: center;
     font-size: 1em;
     background-color: var(--white);
-    border: .4em solid var(--groen);
+    border: 0.4em solid var(--groen);
     padding: 1em;
     border-radius: 2em;
 }
-#likespan{
+#likespan {
     margin: 4em;
     margin-left: 2em;
     margin-right: 2em;
 }
-#vlakkie{
+#vlakkie {
     background-color: white;
     padding: 2em;
     border-radius: 5%;
-    border: .3em solid var(--groen);
+    border: 0.3em solid var(--groen);
     aspect-ratio: 1 / 1.5;
 }
-#vlakkieopa{
+#vlakkieopa {
     background-color: white;
     padding: 2em;
     border-radius: 5%;
-    border: .3em solid var(--groen);
-    opacity: .5;
+    border: 0.3em solid var(--groen);
+    opacity: 0.5;
 }
-#vlakback{
+#vlakback {
     background-color: white;
     padding: 2em;
     border-radius: 5%;
-    border: .3em solid var(--grey);
+    border: 0.3em solid var(--grey);
     position: absolute;
     width: 21.5em;
     aspect-ratio: 1 / 1.5;
     margin-left: 1em;
     top: 10em;
     z-index: -1;
-    opacity: .5;
+    opacity: 0.5;
 }
-#vlakback2{
+#vlakback2 {
     background-color: white;
     padding: 2em;
     border-radius: 5%;
-    border: .3em solid var(--grey);
+    border: 0.3em solid var(--grey);
     position: absolute;
     width: 21.5em;
     aspect-ratio: 1 / 1.5;
     margin-left: 0em;
     top: 9.5em;
     z-index: -2;
-    opacity: .5;
+    opacity: 0.5;
 }
-#tekstvlak{
-    margin-top: .4em;
-    h2{
-        font-family: "gotham rounded";
-        font-weight: 200;
-        font-style: italic;
-    }
-    p{
-        font-family: "gotham rounded";
-        font-weight: 200;
-    }
+#tekstvlak {
+    margin-top: 0.4em;
+h2 {
+    font-family: "gotham rounded";
+    font-weight: 200;
+    font-style: italic;
 }
-#praag{
+p {
+    font-family: "gotham rounded";
+    font-weight: 200;
+}
+}
+#praag {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-image: url("/static/images/praag.png");
@@ -157,33 +160,37 @@ body {
     background-size: cover;
 }
 /* Form */
-#homescreen, #accountscreen{
+#homescreen,
+#accountscreen {
     display: flex;
     flex-direction: column;
     padding: 3em;
 }
-#homescreen label, #accountscreen label{
+#homescreen label,
+#accountscreen label {
     font-family: "gotham rounded";
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
-#homescreen input, #accountscreen input{
+#homescreen input,
+#accountscreen input {
     font-family: "gotham rounded";
     border-radius: 2em;
     height: 3em;
     margin-bottom: 2em;
-    border: .1em solid var(--groen);
-    padding: .5em;
+    border: 0.1em solid var(--groen);
+    padding: 0.5em;
     padding-left: 1em;
 }
-#knopjes{
+#knopjes {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-#knopjes a, button{
+#knopjes a,
+button {
     width: 100%;
-    aspect-ratio: 1 / .5;
-    margin: .5em;
+    aspect-ratio: 1 / 0.5;
+    margin: 0.5em;
     font-family: "gotham rounded";
     border-radius: 5em;
     background-color: var(--white);
@@ -194,22 +201,22 @@ body {
     text-align: center;
     color: var(--zwart);
 }
-button:first-of-type{
-    border: .2em solid var(--rood);
+button:first-of-type {
+    border: 0.2em solid var(--rood);
 }
-button:first-of-type:hover{
+button:first-of-type:hover {
     background-color: var(--rood);
     color: white;
 }
-#knopjes a:nth-of-type(1){
-    border: .2em solid var(--paars);
+#knopjes a:nth-of-type(1) {
+    border: 0.2em solid var(--paars);
 }
-#knopjes a:nth-of-type(1):hover{
+#knopjes a:nth-of-type(1):hover {
     background-color: var(--paars);
     color: white;
 }
 /* Background */
-#background{
+#background {
     height: 100%;
     width: 100%;
     background-image: url("/static/images/background.jpeg");
@@ -217,94 +224,111 @@ button:first-of-type:hover{
     background-size: cover;
     position: absolute;
     z-index: -1;
-    opacity: .2;
+    opacity: 0.2;
 }
-#backbackground{
+#backbackground {
     height: 100%;
     z-index: -2;
     background-color: var(--white);
     width: 100%;
     position: absolute;
 }
-#homescreen{
+#homescreen {
     margin-top: 10em;
 }
+#error{
+    font-family: "gotham rounded";
+    border-radius: 2em;
+    height: 3em;
+    margin-bottom: 2em;
+    border: 0.1em solid var(--rood);
+    padding: 0.5em;
+    padding-left: 1em;
+    background-color: var(--rood);
+    display: none;
+}
+.errorLabel{
+    display: unset !important;
+}
+.fouteInput{
+    border: 0.3em solid var(--rood) !important;
+}
 // Bestaand account pagina //
-#bestaandaccount{
+#bestaandaccount {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
-    form{
-        display: flex;
-        flex-direction: column; 
-    }
-    input{
-        padding: 1em;
-        width: 17em;
-        border-radius: 3em;
-        border: .2em solid var(--groen);
-        font-family: "gotham rounded";
-        font-weight: 400;
-        font-size: .9em;
-    }
-    article{
-        display: flex;
-        flex-direction: row;
-        margin-left: 2em;
-        input{
-            border: .2em solid var(--rood);
-            font-weight: 500;
-        }
-    }
-    article *{
-        width: 13em;
-        margin-top: 0em;
-        text-align: center;
-    }
-    * {
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    figure{
-        background: radial-gradient(circle);
-        background-image: url("/static/images/Danique2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 50%;
-        height: 14em;
-        width: 14em;
-        margin-bottom: .4em;
-        border: 0.5em solid var(--paars);
-    }
-}
-// settings //
-main{
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+input {
+    padding: 1em;
+    width: 17em;
+    border-radius: 3em;
+    border: 0.2em solid var(--groen);
+    font-family: "gotham rounded";
+    font-weight: 400;
+    font-size: 0.9em;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    input {
+    border: 0.2em solid var(--rood);
+    font-weight: 500;
+    }
+}
+article * {
+    width: 13em;
+    margin-top: 0em;
     text-align: center;
+}
+* {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+figure {
+    background: radial-gradient(circle);
+    background-image: url("/static/images/Danique2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 14em;
+    width: 14em;
+    margin-bottom: 0.4em;
+    border: 0.5em solid var(--paars);
+}
+}
+// api //
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 100%;
+article {
+    background-color: var(--groen);
+    padding: 1em;
+    border-radius: 3em;
     width: 100%;
-    article{
-        background-color: var(--groen);
-        padding: 1em;
-        border-radius: 3em;
-        width: 100%;
-        margin-top: .5em;
-        margin-bottom: .5em;
-        font-family: "gotham rounded";
-    }
-    h2{
-        font-weight: 800;
-    }
-    h3{
-        font-weight: 400;
-        color: var(--white);
-    }
-    p{
-        font-weight: 800;
-        color: var(--paars);
-    }
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: "gotham rounded";
+}
+h2 {
+    font-weight: 800;
+}
+h3 {
+    font-weight: 400;
+    color: var(--white);
+}
+p {
+    font-weight: 800;
+    color: var(--paars);
+}
 }

@@ -2,7 +2,8 @@
   font-family: "Gotham Rounded";
   src: url("../fonts/GothamRoundedMedium_21022.ttf") format("ttf");
 }
-*, html {
+*,
+html {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -15,7 +16,7 @@
   --blauw: #5a85c4;
   --geel: #f0d654;
   --groen: #6cbfa2;
-  --grey: #DDDDDD;
+  --grey: #dddddd;
   --zwart: #000000;
 }
 
@@ -65,7 +66,8 @@ body {
 #footer img {
   height: 5em;
 }
-#footer img:nth-of-type(1), #footer img:nth-of-type(3) {
+#footer img:nth-of-type(1),
+#footer img:nth-of-type(3) {
   height: 3em;
 }
 
@@ -83,6 +85,7 @@ body {
 
 #hpbutton {
   width: 10em;
+  text-decoration: none;
 }
 
 #eroverheen {
@@ -175,18 +178,21 @@ body {
 }
 
 /* Form */
-#homescreen, #accountscreen {
+#homescreen,
+#accountscreen {
   display: flex;
   flex-direction: column;
   padding: 3em;
 }
 
-#homescreen label, #accountscreen label {
+#homescreen label,
+#accountscreen label {
   font-family: "gotham rounded";
   margin-bottom: 0.5em;
 }
 
-#homescreen input, #accountscreen input {
+#homescreen input,
+#accountscreen input {
   font-family: "gotham rounded";
   border-radius: 2em;
   height: 3em;
@@ -202,7 +208,8 @@ body {
   flex-direction: row;
 }
 
-#knopjes a, button {
+#knopjes a,
+button {
   width: 100%;
   aspect-ratio: 1/0.5;
   margin: 0.5em;
@@ -257,6 +264,26 @@ button:first-of-type:hover {
 
 #homescreen {
   margin-top: 10em;
+}
+
+#error {
+  font-family: "gotham rounded";
+  border-radius: 2em;
+  height: 3em;
+  margin-bottom: 2em;
+  border: 0.1em solid var(--rood);
+  padding: 0.5em;
+  padding-left: 1em;
+  background-color: var(--rood);
+  display: none;
+}
+
+.errorLabel {
+  display: unset !important;
+}
+
+.fouteInput {
+  border: 0.3em solid var(--rood) !important;
 }
 
 #bestaandaccount {
