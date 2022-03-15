@@ -22,9 +22,8 @@
       <li><a href="#inleiding">📜Inleiding</a></li>
       <li><a href="#idee">✨Doel & algemene informatie</a></li>
       <li><a href="#installatie">⚙️Installatie</a></li>
-      <li><a href="#contributie">💶Contributie</a></li>
+      <li><a href="#license">💶License</a></li>
       <li><a href="#gedragsregels">👮🏽‍♀️Gedragsregels</a></li>
-      <li><a href="#bronnen">📎Bronnen</a></li>
     </ul>
   </section>
 </section>
@@ -88,16 +87,13 @@ git clone <linkje>
 </section>
   
 <section>
-  <h2 id="contributie">💶Contributie</h2>
-  <p></p>
+  <h2 id="license">💶license</h2>
+  <a href="https://github.com/daniquemois/sturdy-broccoli/blob/main/LICENSE">MIT License</a>
 </section>
   
 <section>
   <h2 id="gedragsregels">👮🏽‍♀️Gedragsregels</h2>
-  <p></p>
+  <p>Je mag alles van hier gebruiken zolang je maar een shout-out geeft!</p>
 </section>
   
-<section>
-  <h2 id="bronnen">📎Bronnen</h2>
-</section>
 
