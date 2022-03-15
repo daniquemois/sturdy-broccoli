@@ -34,16 +34,15 @@ body {
   padding-left: 2em;
   padding-right: 2em;
 }
-
-#account {
-  width: 2.5em;
-  height: 2.5em;
-}
-
 #header h2 {
   font-family: "gotham rounded";
   font-weight: 300;
   font-size: 2em;
+}
+
+#account {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 #logo {
@@ -63,11 +62,9 @@ body {
   height: 7em;
   background-color: var(--white);
 }
-
 #footer img {
   height: 5em;
 }
-
 #footer img:nth-of-type(1), #footer img:nth-of-type(3) {
   height: 3em;
 }
@@ -159,13 +156,11 @@ body {
 #tekstvlak {
   margin-top: 0.4em;
 }
-
 #tekstvlak h2 {
   font-family: "gotham rounded";
   font-weight: 200;
   font-style: italic;
 }
-
 #tekstvlak p {
   font-family: "gotham rounded";
   font-weight: 200;
@@ -272,12 +267,10 @@ button:first-of-type:hover {
   margin-left: 2em;
   margin-right: 2em;
 }
-
 #bestaandaccount form {
   display: flex;
   flex-direction: column;
 }
-
 #bestaandaccount input {
   padding: 1em;
   width: 17em;
@@ -287,29 +280,24 @@ button:first-of-type:hover {
   font-weight: 400;
   font-size: 0.9em;
 }
-
 #bestaandaccount article {
   display: flex;
   flex-direction: row;
   margin-left: 2em;
 }
-
+#bestaandaccount article input {
+  border: 0.2em solid var(--rood);
+  font-weight: 500;
+}
 #bestaandaccount article * {
   width: 13em;
   margin-top: 0em;
   text-align: center;
 }
-
-#bestaandaccount article input {
-  border: 0.2em solid var(--rood);
-  font-weight: 500;
-}
-
 #bestaandaccount * {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
 #bestaandaccount figure {
   background: radial-gradient(circle);
   background-image: url("/static/images/Danique2.png");
@@ -322,21 +310,12 @@ button:first-of-type:hover {
   border: 0.5em solid var(--paars);
 }
 
-#filteren {
+#weer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 20em;
-}
-
-#slider {
-  border: 1px solid var(--zwart);
-  width: 100%;
-}
-
-#prijsslider p {
-  margin-top: 0em;
 }
 
 /*# sourceMappingURL=main.css.map */

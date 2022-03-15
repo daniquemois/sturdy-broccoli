@@ -56,5 +56,10 @@ router.post("/register", async (req, res) => {
     });
 });
 
+router.post('/verwijdergebruiker', (req, res) => {
+    console.log(req.body.accountnaam)
+    User.find({ accountnaam: req.body.accountnaam }).remove().exec();
+    res.redirect('/');
+});
 
 module.exports = router;

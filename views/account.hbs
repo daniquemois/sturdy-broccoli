@@ -12,8 +12,8 @@
     </figure>
 
     <form>
-        <input type="text" id="accountnaam" name="accountnaam">
-        <input type="email" id="email" name="email">
+        <input type="text" id="accountnaam" name="accountnaam" value="{{accountnaam}}" required>
+        <input type="email" id="email" name="email" value="{{email}}">
         <input type="submit" value="Wijzigingen opslaan">
     </form>
     
@@ -21,7 +21,7 @@
         <form>
             <input type="submit" value="Uitloggen">
         </form>
-        <form>
+        <form action="verwijdergebruiker" method="post">
             <input type="submit" value="Account verwijderen">
         </form>
     </article>

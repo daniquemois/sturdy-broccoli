@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const User = require("../models/users");
 
 let session
 
@@ -14,8 +15,17 @@ router.get('/', (req, res) => {
   });
 
 router.get('/account', (req, res) => {
-res.render('account', {'title': 'Account'});
-});
+    session = req.session;
+    if (!session.accountnaam) {
+        res.redirect('/');
+    } else {
+        User.find({ accountnaam: session.accountnaam }).then((documents) => {
+            let accountnaam = documents.map(user => user.accountnaam);
+            let email = documents.map(user => user.email);
+            res.render('account', {'title': 'Account', accountnaam: accountnaam, email: email});
+        });
+    }
+  });
 
 router.get('/login', (req, res) => {
 res.render('login', {'title': 'Login'});
@@ -26,8 +36,8 @@ router.get('/accountaanmaken', (req, res) => {
     res.render('accountaanmaken', {'title': 'Account'});
 });
 
-router.get('/settings', (req, res) => {
-res.render('settings', {'title': 'Instellingen'});
+router.get('/api', (req, res) => {
+res.render('api', {'title': 'Weer'});
 });
 
 module.exports = router;
