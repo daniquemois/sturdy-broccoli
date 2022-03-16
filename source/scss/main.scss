@@ -1,26 +1,30 @@
 @font-face {
     font-family: "Gotham Rounded";
     src: url("../fonts/GothamRoundedMedium_21022.ttf") format("ttf");
-  }
-  *,
+}
+
+*,
 html {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+
 :root {
---white: #ffffff;
---paars: #765ba3;
---rood: #d9445d;
---blauw: #5a85c4;
---geel: #f0d654;
---groen: #6cbfa2;
---grey: #dddddd;
---zwart: #000000;
+    --white: #ffffff;
+    --paars: #765ba3;
+    --rood: #d9445d;
+    --blauw: #5a85c4;
+    --geel: #f0d654;
+    --groen: #6cbfa2;
+    --grey: #dddddd;
+    --zwart: #000000;
 }
+
 body {
     background-color: var(--grey);
 }
+
 /* Header */
 #header {
     background-color: white;
@@ -31,20 +35,24 @@ body {
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
-h2 {
-    font-family: "gotham rounded";
-    font-weight: 300;
-    font-size: 2em;
+
+    h2 {
+        font-family: "gotham rounded";
+        font-weight: 300;
+        font-size: 2em;
+    }
 }
-}
+
 #account {
     width: 2.5em;
     height: 2.5em;
 }
+
 #logo {
     height: auto;
     width: 13em;
 }
+
 /* Footer */
 #footer {
     width: 100%;
@@ -56,28 +64,34 @@ h2 {
     width: 100%;
     height: 7em;
     background-color: var(--white);
-img {
-    height: 5em;
+
+    img {
+        height: 5em;
+    }
+
+    img:nth-of-type(1),
+    img:nth-of-type(3) {
+        height: 3em;
+    }
 }
-img:nth-of-type(1),
-img:nth-of-type(3) {
-    height: 3em;
-}
-}
+
 /* Home */
 #eroverheen h2 {
     font-family: "gotham rounded";
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
 #eroverheen p {
     font-family: "gotham rounded";
     margin-bottom: 2em;
 }
+
 #hpbutton {
     width: 10em;
     text-decoration: none;
 }
+
 #eroverheen {
     position: absolute;
     top: 15em;
@@ -95,11 +109,13 @@ img:nth-of-type(3) {
     padding: 1em;
     border-radius: 2em;
 }
+
 #likespan {
     margin: 4em;
     margin-left: 2em;
     margin-right: 2em;
 }
+
 #vlakkie {
     background-color: white;
     padding: 2em;
@@ -107,6 +123,7 @@ img:nth-of-type(3) {
     border: 0.3em solid var(--groen);
     aspect-ratio: 1 / 1.5;
 }
+
 #vlakkieopa {
     background-color: white;
     padding: 2em;
@@ -114,6 +131,7 @@ img:nth-of-type(3) {
     border: 0.3em solid var(--groen);
     opacity: 0.5;
 }
+
 #vlakback {
     background-color: white;
     padding: 2em;
@@ -127,6 +145,7 @@ img:nth-of-type(3) {
     z-index: -1;
     opacity: 0.5;
 }
+
 #vlakback2 {
     background-color: white;
     padding: 2em;
@@ -140,18 +159,22 @@ img:nth-of-type(3) {
     z-index: -2;
     opacity: 0.5;
 }
+
 #tekstvlak {
     margin-top: 0.4em;
-h2 {
-    font-family: "gotham rounded";
-    font-weight: 200;
-    font-style: italic;
+
+    h2 {
+        font-family: "gotham rounded";
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    p {
+        font-family: "gotham rounded";
+        font-weight: 200;
+    }
 }
-p {
-    font-family: "gotham rounded";
-    font-weight: 200;
-}
-}
+
 #praag {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -159,6 +182,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* Form */
 #homescreen,
 #accountscreen {
@@ -166,11 +190,13 @@ p {
     flex-direction: column;
     padding: 3em;
 }
+
 #homescreen label,
 #accountscreen label {
     font-family: "gotham rounded";
     margin-bottom: 0.5em;
 }
+
 #homescreen input,
 #accountscreen input {
     font-family: "gotham rounded";
@@ -181,11 +207,13 @@ p {
     padding: 0.5em;
     padding-left: 1em;
 }
+
 #knopjes {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
+
 #knopjes a,
 button {
     width: 100%;
@@ -201,20 +229,25 @@ button {
     text-align: center;
     color: var(--zwart);
 }
+
 button:first-of-type {
     border: 0.2em solid var(--rood);
 }
+
 button:first-of-type:hover {
     background-color: var(--rood);
     color: white;
 }
+
 #knopjes a:nth-of-type(1) {
     border: 0.2em solid var(--paars);
 }
+
 #knopjes a:nth-of-type(1):hover {
     background-color: var(--paars);
     color: white;
 }
+
 /* Background */
 #background {
     height: 100%;
@@ -226,6 +259,7 @@ button:first-of-type:hover {
     z-index: -1;
     opacity: 0.2;
 }
+
 #backbackground {
     height: 100%;
     z-index: -2;
@@ -233,10 +267,12 @@ button:first-of-type:hover {
     width: 100%;
     position: absolute;
 }
+
 #homescreen {
     margin-top: 10em;
 }
-#error{
+
+#error {
     font-family: "gotham rounded";
     border-radius: 2em;
     height: 3em;
@@ -247,12 +283,15 @@ button:first-of-type:hover {
     background-color: var(--rood);
     display: none;
 }
-.errorLabel{
+
+.errorLabel {
     display: unset !important;
 }
-.fouteInput{
+
+.fouteInput {
     border: 0.3em solid var(--rood) !important;
 }
+
 // Bestaand account pagina //
 #bestaandaccount {
     display: flex;
@@ -261,90 +300,105 @@ button:first-of-type:hover {
     margin-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
-form {
-    display: flex;
-    flex-direction: column;
-}
-input {
-    padding: 1em;
-    width: 17em;
-    border-radius: 3em;
-    border: 0.2em solid var(--groen);
-    font-family: "gotham rounded";
-    font-weight: 400;
-    font-size: 0.9em;
-}
-article {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2em;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
     input {
-    border: 0.2em solid var(--rood);
-    font-weight: 500;
+        padding: 1em;
+        width: 17em;
+        border-radius: 3em;
+        border: 0.2em solid var(--groen);
+        font-family: "gotham rounded";
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2em;
+
+        input {
+            border: 0.2em solid var(--rood);
+            font-weight: 500;
+        }
+    }
+
+    article * {
+        width: 13em;
+        margin-top: 0em;
+        text-align: center;
+    }
+
+    * {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    figure {
+        background: radial-gradient(circle);
+        background-image: url("/static/images/Danique2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: 14em;
+        width: 14em;
+        margin-bottom: 0.4em;
+        border: 0.5em solid var(--paars);
     }
 }
-article * {
-    width: 13em;
-    margin-top: 0em;
-    text-align: center;
-}
-* {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-figure {
-    background: radial-gradient(circle);
-    background-image: url("/static/images/Danique2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    height: 14em;
-    width: 14em;
-    margin-bottom: 0.4em;
-    border: 0.5em solid var(--paars);
-}
-}
+
 // api //
 main {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-width: 100%;
-article {
-    background-color: var(--groen);
-    padding: 1em;
-    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-family: "gotham rounded";
+
+    article {
+        background-color: var(--groen);
+        padding: 1em;
+        border-radius: 3em;
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-family: "gotham rounded";
+    }
+
+    h2 {
+        font-weight: 800;
+    }
+
+    h3 {
+        font-weight: 400;
+        color: var(--white);
+    }
+
+    p {
+        font-weight: 800;
+        color: var(--paars);
+    }
 }
-h2 {
-    font-weight: 800;
-}
-h3 {
-    font-weight: 400;
-    color: var(--white);
-}
-p {
-    font-weight: 800;
-    color: var(--paars);
-}
-}
+
 // Errorpagina
-#errorpagina{
+#errorpagina {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 4em;
-    h1{
+
+    h1 {
         font-family: "gotham rounded";
         font-size: 3em;
         color: var(--rood);
     }
-    h2{
+
+    h2 {
         font-family: "gotham rounded";
         font-size: 2em;
         color: var(--paars);
