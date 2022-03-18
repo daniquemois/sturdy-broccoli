@@ -61,8 +61,8 @@ router.post("/register", async (req, res) => {
 
 // Hiermee verwijder je de gebruiker
 router.post('/verwijdergebruiker', (req, res) => {
-    console.log(req.body.accountnaam)
-    User.find({ accountnaam: req.body.accountnaam }).remove().exec();
+    console.log(req.session.accountnaam)
+    User.find({ accountnaam: req.session.accountnaam }).remove().exec();
     res.redirect('/');
 });
 
