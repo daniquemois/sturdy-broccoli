@@ -77,8 +77,8 @@ footer img:nth-of-type(3) {
   color: #765ba3;
   font-family: "poppins", sans-serif;
   font-weight: 600;
-  margin-top: -4em;
-  margin-left: 8em;
+  margin-top: 0em;
+  margin-left: 5em;
 }
 
 a {

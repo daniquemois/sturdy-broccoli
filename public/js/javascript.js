@@ -4,13 +4,13 @@ const CONFIG = {
 	spreadsheetName: 'Blad1'
 }
 
-// Die haalt de API link op
+// Dit haalt de API link op
 async function getData() {
 	let res = await fetch(`https://opensheet.elk.sh/${CONFIG.spreadsheetId}/${CONFIG.spreadsheetName}`)
 	return await res.json();
 }
 
-// Hier halenwe de gegevens op en hiermee kunnen we ook stijlen
+// Hier halen we de gegevens op en hiermee kunnen we ook stijlen
 function gegevensOphalen(data) {
 	let main = document.querySelector('main');
 	
