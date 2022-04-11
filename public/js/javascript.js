@@ -1,5 +1,6 @@
 // Hier halen we de spreadsheet op
 const CONFIG = {
+	// dit is alle info die nodig is om de spreadhsheet op te halen
 	spreadsheetId: '1F3DBuLeR1-vDdglypceSc6ci6vNgcQ15R2Y33Q0kXuo',
 	spreadsheetName: 'Blad1'
 }
@@ -15,8 +16,9 @@ function gegevensOphalen(data) {
 	let main = document.querySelector('main');
 	
 	console.log(data);
-
+	// we willen dat de data verschillende items bevat
 	data.forEach(item => {
+		// de let zorgt ervoor dat het element aangemaakt word
 		let container = document.createElement('article');
 		
 		let continent = document.createElement('h2');
