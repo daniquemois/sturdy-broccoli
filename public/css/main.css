@@ -9,6 +9,29 @@ body {
   background-color: #dddddd;
 }
 
+#background {
+  height: 100%;
+  width: 100%;
+  background-image: url("/static/images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#backbackground {
+  height: 100%;
+  z-index: -2;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+}
+
+#homescreen {
+  margin-top: 10em;
+}
+
 header {
   background-color: #ffffff;
   display: flex;
@@ -99,7 +122,7 @@ a {
   border-radius: 2em;
   height: 3em;
   margin-bottom: 2em;
-  border: 0.1em solid var(--groen);
+  border: 0.1em solid #6cbfa2;
   padding: 0.5em;
   padding-left: 1em;
   font-size: 1em;
@@ -114,6 +137,49 @@ a {
   font-family: "poppins", sans-serif;
 }
 
+#error {
+  font-family: "poppins", sans-serif;
+  border-radius: 2em;
+  height: 3em;
+  margin-bottom: 2em;
+  border: 0.1em solid #d9445d;
+  padding: 0.5em;
+  padding-left: 1em;
+  background-color: #d9445d;
+  display: none;
+}
+
+.errorLabel {
+  display: unset !important;
+}
+
+.fouteInput {
+  border: 0.3em solid #d9445d !important;
+}
+
+#errorpagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 4em;
+}
+#errorpagina h1 {
+  font-family: "poppins", sans-serif;
+  font-size: 3em;
+  color: #d9445d;
+}
+#errorpagina h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 2em;
+  color: #765ba3;
+}
+
+#inloggen {
+  width: 100%;
+  height: 15em;
+}
+
 #likespan {
   margin: 4em;
   margin-left: 2em;
@@ -125,6 +191,25 @@ a {
   border-radius: 5%;
   border: 0.3em solid #6cbfa2;
   aspect-ratio: 1/1.5;
+}
+#likespan #vlakkie #tekstvlak {
+  margin-top: 0.4em;
+}
+#likespan #vlakkie #tekstvlak h2 {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+#likespan #vlakkie #tekstvlak p {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+}
+#likespan #vlakkie #praag {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("/static/images/praag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #likespan #vlakkieopa {
   background-color: #ffffff;
@@ -216,50 +301,6 @@ a {
   color: #ffffff;
 }
 
-/* Background */
-#background {
-  height: 100%;
-  width: 100%;
-  background-image: url("/static/images/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-#backbackground {
-  height: 100%;
-  z-index: -2;
-  background-color: var(--white);
-  width: 100%;
-  position: absolute;
-}
-
-#homescreen {
-  margin-top: 10em;
-}
-
-#error {
-  font-family: "gotham rounded";
-  border-radius: 2em;
-  height: 3em;
-  margin-bottom: 2em;
-  border: 0.1em solid var(--rood);
-  padding: 0.5em;
-  padding-left: 1em;
-  background-color: var(--rood);
-  display: none;
-}
-
-.errorLabel {
-  display: unset !important;
-}
-
-.fouteInput {
-  border: 0.3em solid var(--rood) !important;
-}
-
 #bestaandaccount {
   display: flex;
   flex-direction: column;
@@ -276,7 +317,7 @@ a {
   padding: 1em;
   width: 17em;
   border-radius: 3em;
-  border: 0.2em solid var(--groen);
+  border: 0.2em solid #6cbfa2;
   font-family: "gotham rounded";
   font-weight: 400;
   font-size: 0.9em;
@@ -287,7 +328,6 @@ a {
   margin-left: 2em;
 }
 #bestaandaccount article input {
-  border: 0.2em solid var(--rood);
   font-weight: 500;
 }
 #bestaandaccount article * {
@@ -301,14 +341,22 @@ a {
 }
 #bestaandaccount figure {
   background: radial-gradient(circle);
-  background-image: url("/static/images/Danique2.png");
+  background-image: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
   height: 14em;
   width: 14em;
   margin-bottom: 0.4em;
-  border: 0.5em solid var(--paars);
+  border: 0.5em solid #765ba3;
+}
+#bestaandaccount #uitloggenacc input {
+  background-color: #6cbfa2;
+  border: none;
+}
+#bestaandaccount #verwijderenacc input {
+  background-color: #d9445d;
+  border: none;
 }
 
 main {
@@ -316,50 +364,28 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
+  margin-left: 3em;
+  width: 80%;
 }
 main article {
-  background-color: var(--groen);
-  padding: 1em;
+  background-color: #6cbfa2;
+  padding: 0.5em;
   border-radius: 3em;
   width: 100%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  font-family: "gotham rounded";
+  font-family: "poppins", sans-serif;
 }
 main h2 {
-  font-weight: 800;
+  font-weight: 300;
 }
 main h3 {
   font-weight: 400;
-  color: var(--white);
+  color: #ffffff;
 }
 main p {
   font-weight: 800;
-  color: var(--paars);
-}
-
-#errorpagina {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 4em;
-}
-#errorpagina h1 {
-  font-family: "gotham rounded";
-  font-size: 3em;
-  color: var(--rood);
-}
-#errorpagina h2 {
-  font-family: "gotham rounded";
-  font-size: 2em;
-  color: var(--paars);
-}
-
-#inloggen {
-  width: 100%;
-  height: 15em;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

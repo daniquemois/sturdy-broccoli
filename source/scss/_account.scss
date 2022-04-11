@@ -1,0 +1,68 @@
+#bestaandaccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 1em;
+        width: 17em;
+        border-radius: 3em;
+        border: 0.2em solid $green-color;
+        font-family: "gotham rounded";
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2em;
+
+        input {
+            font-weight: 500;
+        }
+    }
+
+    article * {
+        width: 13em;
+        margin-top: 0em;
+        text-align: center;
+    }
+
+    * {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    figure {
+        background: radial-gradient(circle);
+        background-image: url("https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: 14em;
+        width: 14em;
+        margin-bottom: 0.4em;
+        border: 0.5em solid $purple-color;
+    }
+    #uitloggenacc{
+        input{
+            background-color: $green-color;
+            border: none;
+        }
+    }
+    #verwijderenacc{
+        input{
+            background-color: $red-color;
+            border: none;
+        }
+    }
+}

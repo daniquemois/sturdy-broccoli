@@ -1,0 +1,42 @@
+#error {
+    font-family: $main-font;
+    border-radius: 2em;
+    height: 3em;
+    margin-bottom: 2em;
+    border: 0.1em solid $red-color;
+    padding: 0.5em;
+    padding-left: 1em;
+    background-color: $red-color;
+    display: none;
+}
+
+.errorLabel {
+    display: unset !important;
+}
+
+.fouteInput {
+    border: 0.3em solid $red-color !important;
+}
+#errorpagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4em;
+
+    h1 {
+        font-family: $main-font;
+        font-size: 3em;
+        color: $red-color;
+    }
+
+    h2 {
+        font-family: $main-font;
+        font-size: 2em;
+        color: $purple-color;
+    }
+}
+#inloggen{
+    width: 100%;
+    height: 15em;
+}

@@ -8,6 +8,27 @@
         border-radius: 5%;
         border: 0.3em solid $green-color;
         aspect-ratio: 1 / 1.5;
+        #tekstvlak {
+            margin-top: 0.4em;
+        
+            h2 {
+                font-family: $main-font;
+                font-weight: 200;
+                font-style: italic;
+            }
+        
+            p {
+                font-family: $main-font;
+                font-weight: 200;
+            }
+        }
+        #praag {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-image: url("/static/images/praag.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
     
     #vlakkieopa {
@@ -30,7 +51,6 @@
                 font-weight: 200;
             }
         }
-        
         #praag {
             width: 100%;
             aspect-ratio: 1 / 1;
