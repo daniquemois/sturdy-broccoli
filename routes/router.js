@@ -24,6 +24,7 @@ router.get('/account', (req, res) => {
         User.find({ accountnaam: session.accountnaam }).then((documents) => {
             let accountnaam = documents.map(user => user.accountnaam);
             let email = documents.map(user => user.email);
+            console.log(accountnaam);
             res.render('account', {'title': 'Account', accountnaam: accountnaam, email: email});
         });
     }

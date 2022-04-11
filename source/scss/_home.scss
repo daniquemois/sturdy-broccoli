@@ -1,0 +1,107 @@
+#likespan {
+    margin: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    #vlakkie {
+        background-color: $white-color;
+        padding: 2em;
+        border-radius: 5%;
+        border: 0.3em solid $green-color;
+        aspect-ratio: 1 / 1.5;
+    }
+    
+    #vlakkieopa {
+        background-color: $white-color;
+        padding: 2em;
+        border-radius: 5%;
+        border: 0.3em solid $green-color;
+        opacity: 0.5;
+        #tekstvlak {
+            margin-top: 0.4em;
+        
+            h2 {
+                font-family: $main-font;
+                font-weight: 200;
+                font-style: italic;
+            }
+        
+            p {
+                font-family: $main-font;
+                font-weight: 200;
+            }
+        }
+        
+        #praag {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-image: url("/static/images/praag.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    
+    #vlakback {
+        background-color: $white-color;
+        padding: 2em;
+        border-radius: 5%;
+        border: 0.3em solid $grey-color;
+        position: absolute;
+        width: 21.5em;
+        aspect-ratio: 1 / 1.5;
+        margin-left: 1em;
+        top: 10em;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    #vlakback2 {
+        background-color: $white-color;
+        padding: 2em;
+        border-radius: 5%;
+        border: 0.3em solid $grey-color;
+        position: absolute;
+        width: 21.5em;
+        aspect-ratio: 1 / 1.5;
+        margin-left: 0em;
+        top: 9.5em;
+        z-index: -2;
+        opacity: 0.5;
+    }  
+    #eroverheen {
+        position: absolute;
+        top: 15em;
+        left: 3em;
+        width: 20em;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1em;
+        background-color: $white-color;
+        border: 0.2em solid $green-color;
+        padding: 1em;
+        border-radius: 2em;
+        h2 {
+            font-family: $main-font;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        p {
+            font-family: $main-font;
+            margin-bottom: 2em;
+        }
+        a {
+            text-decoration: none;
+        }
+        button{
+            font-size: 1.2em;
+            width: 8em;
+            margin-left: 1em;
+            background-color: $green-color;
+            border-radius: 1em;
+            color: $white-color;
+        }
+    }  
+}

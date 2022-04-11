@@ -1,0 +1,25 @@
+header {
+    background-color: $white-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    h2 {
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 2em;
+    }
+}
+#account {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#logo {
+    height: auto;
+    width: 13em;
+}

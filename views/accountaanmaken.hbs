@@ -11,22 +11,23 @@
 <form action="/register" method="POST" id="accountscreen"> 
 
     <label for="frame">Voornaam</label>
-    <input type="text" id="voornaam" name="voornaam">
+    <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
 
     <label for="frame">Achternaam</label>
-    <input type="text" id="achternaam" name="achternaam">
+    <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
 
     <label for="frame">Accountnaam</label>
-    <input type="text" id="accountnaam" name="accountnaam">
+    <input type="text" id="accountnaam" name="accountnaam" placeholder="Accountnaam">
 
     <label for="frame">Email</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" placeholder="Email">
 
     <label for="frame">Wachtwoord</label>
-    <input type="password" id="wachtwoord" name="wachtwoord">
-    
-    <section id="knopjes">
-        <a href="/login">Ik heb al een account</a>
-        <button>Account aanmaken</button>
-    </section>
+    <input type="password" id="wachtwoord" name="wachtwoord" placeholder="Wachtwoord">
+
+        <a href="/login" id="hebalaccount">Ik heb al een account</a>
+        <form action="register" method="post">
+            <input type="submit" value="Account aanmaken">
+        </form>
+
 </form>

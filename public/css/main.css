@@ -1,32 +1,16 @@
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url("../fonts/GothamRoundedMedium_21022.ttf") format("ttf"), url("../fonts/Gotham-Rounded-Light.woff") format("woff");
-}
-*,
-html {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, html {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
 
-:root {
-  --white: #ffffff;
-  --paars: #765ba3;
-  --rood: #d9445d;
-  --blauw: #5a85c4;
-  --geel: #f0d654;
-  --groen: #6cbfa2;
-  --grey: #dddddd;
-  --zwart: #000000;
-}
-
 body {
-  background-color: var(--grey);
+  background-color: #dddddd;
 }
 
-/* Header */
 header {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,7 +20,7 @@ header {
   padding-right: 2em;
 }
 header h2 {
-  font-family: "gotham rounded";
+  font-family: "poppins", sans-serif;
   font-weight: 300;
   font-size: 2em;
 }
@@ -51,7 +35,6 @@ header h2 {
   width: 13em;
 }
 
-/* Footer */
 footer {
   width: 100%;
   bottom: 0;
@@ -61,34 +44,141 @@ footer {
   align-items: center;
   width: 100%;
   height: 7em;
-  background-color: var(--white);
+  background-color: #ffffff;
 }
 footer img {
-  height: 5em;
+  height: 4em;
 }
 footer img:nth-of-type(1),
 footer img:nth-of-type(3) {
   height: 3em;
 }
 
-/* Home */
-#eroverheen h2 {
-  font-family: "gotham rounded";
-  margin-top: 2em;
+#homescreen {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+#homescreen label {
+  font-family: "poppins", sans-serif;
+  margin-bottom: 0.5em;
+}
+#homescreen input {
+  font-family: "poppins", sans-serif;
+  border-radius: 2em;
+  height: 3em;
   margin-bottom: 2em;
+  border: 0.1em solid #6cbfa2;
+  padding: 0.5em;
+  padding-left: 1em;
 }
 
-#eroverheen p {
-  font-family: "gotham rounded";
-  margin-bottom: 2em;
+#accountp {
+  color: #765ba3;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  margin-top: -4em;
+  margin-left: 8em;
 }
 
-#hpbutton {
-  width: 10em;
+a {
   text-decoration: none;
 }
 
-#eroverheen {
+#accountscreen {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+#accountscreen label {
+  font-family: "poppins", sans-serif;
+  margin-bottom: 0.5em;
+}
+#accountscreen input {
+  font-family: "poppins", sans-serif;
+  border-radius: 2em;
+  height: 3em;
+  margin-bottom: 2em;
+  border: 0.1em solid var(--groen);
+  padding: 0.5em;
+  padding-left: 1em;
+  font-size: 1em;
+}
+#accountscreen #hebalaccount {
+  color: #000000;
+  background-color: #6cbfa2;
+  padding: 0.7em;
+  text-align: center;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  font-family: "poppins", sans-serif;
+}
+
+#likespan {
+  margin: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+#likespan #vlakkie {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 5%;
+  border: 0.3em solid #6cbfa2;
+  aspect-ratio: 1/1.5;
+}
+#likespan #vlakkieopa {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 5%;
+  border: 0.3em solid #6cbfa2;
+  opacity: 0.5;
+}
+#likespan #vlakkieopa #tekstvlak {
+  margin-top: 0.4em;
+}
+#likespan #vlakkieopa #tekstvlak h2 {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+#likespan #vlakkieopa #tekstvlak p {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+}
+#likespan #vlakkieopa #praag {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("/static/images/praag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#likespan #vlakback {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 5%;
+  border: 0.3em solid #dddddd;
+  position: absolute;
+  width: 21.5em;
+  aspect-ratio: 1/1.5;
+  margin-left: 1em;
+  top: 10em;
+  z-index: -1;
+  opacity: 0.5;
+}
+#likespan #vlakback2 {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 5%;
+  border: 0.3em solid #dddddd;
+  position: absolute;
+  width: 21.5em;
+  aspect-ratio: 1/1.5;
+  margin-left: 0em;
+  top: 9.5em;
+  z-index: -2;
+  opacity: 0.5;
+}
+#likespan #eroverheen {
   position: absolute;
   top: 15em;
   left: 3em;
@@ -100,146 +190,30 @@ footer img:nth-of-type(3) {
   align-content: center;
   align-items: center;
   font-size: 1em;
-  background-color: var(--white);
-  border: 0.4em solid var(--groen);
+  background-color: #ffffff;
+  border: 0.2em solid #6cbfa2;
   padding: 1em;
   border-radius: 2em;
 }
-
-#likespan {
-  margin: 4em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-#vlakkie {
-  background-color: white;
-  padding: 2em;
-  border-radius: 5%;
-  border: 0.3em solid var(--groen);
-  aspect-ratio: 1/1.5;
-}
-
-#vlakkieopa {
-  background-color: white;
-  padding: 2em;
-  border-radius: 5%;
-  border: 0.3em solid var(--groen);
-  opacity: 0.5;
-}
-
-#vlakback {
-  background-color: white;
-  padding: 2em;
-  border-radius: 5%;
-  border: 0.3em solid var(--grey);
-  position: absolute;
-  width: 21.5em;
-  aspect-ratio: 1/1.5;
-  margin-left: 1em;
-  top: 10em;
-  z-index: -1;
-  opacity: 0.5;
-}
-
-#vlakback2 {
-  background-color: white;
-  padding: 2em;
-  border-radius: 5%;
-  border: 0.3em solid var(--grey);
-  position: absolute;
-  width: 21.5em;
-  aspect-ratio: 1/1.5;
-  margin-left: 0em;
-  top: 9.5em;
-  z-index: -2;
-  opacity: 0.5;
-}
-
-#tekstvlak {
-  margin-top: 0.4em;
-}
-#tekstvlak h2 {
-  font-family: "gotham rounded";
-  font-weight: 200;
-  font-style: italic;
-}
-#tekstvlak p {
-  font-family: "gotham rounded";
-  font-weight: 200;
-}
-
-#praag {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background-image: url("/static/images/praag.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Form */
-#homescreen,
-#accountscreen {
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-}
-
-#homescreen label,
-#accountscreen label {
-  font-family: "gotham rounded";
-  margin-bottom: 0.5em;
-}
-
-#homescreen input,
-#accountscreen input {
-  font-family: "gotham rounded";
-  border-radius: 2em;
-  height: 3em;
+#likespan #eroverheen h2 {
+  font-family: "poppins", sans-serif;
+  margin-top: 2em;
   margin-bottom: 2em;
-  border: 0.1em solid var(--groen);
-  padding: 0.5em;
-  padding-left: 1em;
 }
-
-#knopjes {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+#likespan #eroverheen p {
+  font-family: "poppins", sans-serif;
+  margin-bottom: 2em;
 }
-
-#knopjes a,
-button {
-  width: 100%;
-  aspect-ratio: 1/0.5;
-  margin: 0.5em;
-  font-family: "gotham rounded";
-  border-radius: 5em;
-  background-color: var(--white);
+#likespan #eroverheen a {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--zwart);
 }
-
-button:first-of-type {
-  border: 0.2em solid var(--rood);
-}
-
-button:first-of-type:hover {
-  background-color: var(--rood);
-  color: white;
-}
-
-#knopjes a:nth-of-type(1) {
-  border: 0.2em solid var(--paars);
-}
-
-#knopjes a:nth-of-type(1):hover {
-  background-color: var(--paars);
-  color: white;
+#likespan #eroverheen button {
+  font-size: 1.2em;
+  width: 8em;
+  margin-left: 1em;
+  background-color: #6cbfa2;
+  border-radius: 1em;
+  color: #ffffff;
 }
 
 /* Background */
@@ -381,6 +355,11 @@ main p {
   font-family: "gotham rounded";
   font-size: 2em;
   color: var(--paars);
+}
+
+#inloggen {
+  width: 100%;
+  height: 15em;
 }
 
 /*# sourceMappingURL=main.css.map */

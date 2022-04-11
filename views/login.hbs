@@ -10,15 +10,18 @@
 <form action="/inloggen" id="homescreen" method="POST"> 
 
     <label for="frame">Inlognaam</label>
-    <input type="text" id="accountnaam" name="accountnaam">
+    <input type="text" id="accountnaam" name="accountnaam" placeholder="Inlognaam">
 
     <label for="frame">Wachtwoord</label>
-    <input type="password" id="wachtwoord" name="wachtwoord">
+    <input type="password" id="wachtwoord" name="wachtwoord" placeholder="Wachtwoord">
 
-    <section id="knopjes">
-        <button>Inloggen</button>
-        <a href="/accountaanmaken">Account aanmaken</a>
-    </section>
+    <form action="inloggen" method="post">
+        <input type="submit" id="inlogknop" value="Inloggen">
+    </form>
+    
+    <a href="/accountaanmaken">
+    <p id="accountp">Account aanmaken</p>
+    </a>
     {{!-- Dit zorgt ervoor dat zodra je niks invult je een error krijgt --}}
     <label id="error"></label>
     

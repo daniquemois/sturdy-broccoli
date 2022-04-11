@@ -1,252 +1,20 @@
-@font-face {
-    font-family: "Gotham Rounded";
-    src: url("../fonts/GothamRoundedMedium_21022.ttf") format("ttf"),  url("../fonts/Gotham-Rounded-Light.woff") format("woff");
-}
+// CSS document
 
-*,
-html {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
+// Variables
+@import 'variables';
 
-:root {
-    --white: #ffffff;
-    --paars: #765ba3;
-    --rood: #d9445d;
-    --blauw: #5a85c4;
-    --geel: #f0d654;
-    --groen: #6cbfa2;
-    --grey: #dddddd;
-    --zwart: #000000;
-}
+// Global
+@import 'global';
 
-body {
-    background-color: var(--grey);
-}
+// Partials
+@import 'header';
+@import 'footer';
+@import 'form';
 
-/* Header */
-header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1em;
-    align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+// Pagina's
+@import 'home';
 
-    h2 {
-        font-family: "gotham rounded";
-        font-weight: 300;
-        font-size: 2em;
-    }
-}
 
-#account {
-    width: 2.5em;
-    height: 2.5em;
-}
-
-#logo {
-    height: auto;
-    width: 13em;
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 7em;
-    background-color: var(--white);
-
-    img {
-        height: 5em;
-    }
-
-    img:nth-of-type(1),
-    img:nth-of-type(3) {
-        height: 3em;
-    }
-}
-
-/* Home */
-#eroverheen h2 {
-    font-family: "gotham rounded";
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-#eroverheen p {
-    font-family: "gotham rounded";
-    margin-bottom: 2em;
-}
-
-#hpbutton {
-    width: 10em;
-    text-decoration: none;
-}
-
-#eroverheen {
-    position: absolute;
-    top: 15em;
-    left: 3em;
-    width: 20em;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    font-size: 1em;
-    background-color: var(--white);
-    border: 0.4em solid var(--groen);
-    padding: 1em;
-    border-radius: 2em;
-}
-
-#likespan {
-    margin: 4em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-#vlakkie {
-    background-color: white;
-    padding: 2em;
-    border-radius: 5%;
-    border: 0.3em solid var(--groen);
-    aspect-ratio: 1 / 1.5;
-}
-
-#vlakkieopa {
-    background-color: white;
-    padding: 2em;
-    border-radius: 5%;
-    border: 0.3em solid var(--groen);
-    opacity: 0.5;
-}
-
-#vlakback {
-    background-color: white;
-    padding: 2em;
-    border-radius: 5%;
-    border: 0.3em solid var(--grey);
-    position: absolute;
-    width: 21.5em;
-    aspect-ratio: 1 / 1.5;
-    margin-left: 1em;
-    top: 10em;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-#vlakback2 {
-    background-color: white;
-    padding: 2em;
-    border-radius: 5%;
-    border: 0.3em solid var(--grey);
-    position: absolute;
-    width: 21.5em;
-    aspect-ratio: 1 / 1.5;
-    margin-left: 0em;
-    top: 9.5em;
-    z-index: -2;
-    opacity: 0.5;
-}
-
-#tekstvlak {
-    margin-top: 0.4em;
-
-    h2 {
-        font-family: "gotham rounded";
-        font-weight: 200;
-        font-style: italic;
-    }
-
-    p {
-        font-family: "gotham rounded";
-        font-weight: 200;
-    }
-}
-
-#praag {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-image: url("/static/images/praag.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Form */
-#homescreen,
-#accountscreen {
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-}
-
-#homescreen label,
-#accountscreen label {
-    font-family: "gotham rounded";
-    margin-bottom: 0.5em;
-}
-
-#homescreen input,
-#accountscreen input {
-    font-family: "gotham rounded";
-    border-radius: 2em;
-    height: 3em;
-    margin-bottom: 2em;
-    border: 0.1em solid var(--groen);
-    padding: 0.5em;
-    padding-left: 1em;
-}
-
-#knopjes {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#knopjes a,
-button {
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    margin: 0.5em;
-    font-family: "gotham rounded";
-    border-radius: 5em;
-    background-color: var(--white);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--zwart);
-}
-
-button:first-of-type {
-    border: 0.2em solid var(--rood);
-}
-
-button:first-of-type:hover {
-    background-color: var(--rood);
-    color: white;
-}
-
-#knopjes a:nth-of-type(1) {
-    border: 0.2em solid var(--paars);
-}
-
-#knopjes a:nth-of-type(1):hover {
-    background-color: var(--paars);
-    color: white;
-}
 
 /* Background */
 #background {
@@ -403,4 +171,8 @@ main {
         font-size: 2em;
         color: var(--paars);
     }
+}
+#inloggen{
+    width: 100%;
+    height: 15em;
 }

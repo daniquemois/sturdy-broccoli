@@ -14,7 +14,10 @@ router.post('/inloggen', async (req, res) => {
     try {
         const getUser = await User.findOne({ username: req.body.accountnaam });
         if (getUser) {
+            console.log(req.body.wachtwoord);
+            console.log(getUser.wachtwoord)
           const comparePassword = await bcrypt.compare(req.body.wachtwoord, getUser.wachtwoord);
+          console.log(comparePassword)
           if (comparePassword) {
             console.log("Succesvol ingelogd!");
             session = req.session;
@@ -25,7 +28,7 @@ router.post('/inloggen', async (req, res) => {
             return res.status(404).redirect('/login');
           }
         } else {
-            console.error("Verkeerde gebruikersnaam of wachtwoord!");
+            console.error("Geen user gevonden");
             return res.status(404).redirect('/login');
         }
     } catch (error) {
@@ -63,6 +66,7 @@ router.post("/register", async (req, res) => {
 router.post('/verwijdergebruiker', (req, res) => {
     console.log(req.session.accountnaam)
     User.find({ accountnaam: req.session.accountnaam }).remove().exec();
+    req.session.destroy();
     res.redirect('/');
 });
 
