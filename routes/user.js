@@ -12,7 +12,7 @@ let session;
 // Dit is om in te loggen. Hij vergelijkt dan wat je hebt ingevuld met wat er in de database staat.
 router.post('/inloggen', async (req, res) => {
     try {
-        const getUser = await User.findOne({ username: req.body.accountnaam });
+        const getUser = await User.findOne({ accountnaam: req.body.accountnaam });
         if (getUser) {
             console.log(req.body.wachtwoord);
             console.log(getUser.wachtwoord)
